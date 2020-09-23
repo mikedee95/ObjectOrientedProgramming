@@ -21,6 +21,16 @@ function Circle(x,y,radius){
 //     ctx.fill();
 // }
 // creatCircle2()
+
+// function getRandomHex(){
+//     return Math.floor(Math.random()*255);
+// }
+// function getRandomColor(){
+//     let red = getRandomHex();
+//     let green = getRandomHex();
+//     let blue = getRandomHex();
+//     return "rgb(" + red + "," + green + "," + blue + ")";
+// }
 // function creatCircle3(){
 //     let ctx = document.getElementById("myCanvas").getContext("2d");
 //     let radius = Math.floor(Math.random()*80);
@@ -32,4 +42,3 @@ function Circle(x,y,radius){
 //     ctx.fill();
 // }
 // creatCircle3()
-
