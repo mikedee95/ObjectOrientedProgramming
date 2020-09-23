@@ -21,4 +21,15 @@ function Circle(x,y,radius){
 //     ctx.fill();
 // }
 // creatCircle2()
+// function creatCircle3(){
+//     let ctx = document.getElementById("myCanvas").getContext("2d");
+//     let radius = Math.floor(Math.random()*80);
+//     let color = getRandomColor();
+//     let circle3 = new Circle(450,450,radius);
+//     ctx.beginPath();
+//     ctx.arc(circle3.x, circle3.y, radius, 0, 2*Math.PI);
+//     ctx.fillStyle = color;
+//     ctx.fill();
+// }
+// creatCircle3()
 
