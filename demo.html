@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="DateClass.js"></script>
+
+</head>
+<body>
+<script>
+    function Student (id, name, address){
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.getInfor = function (){
+            return "Id = " + this.id + " Name =" + this.name + "Address = " + this.address;
+        }
+    }
+    let student = new Student(95, "Mai Anh Dung" , "Thai Nguyen")
+    alert(student.getInfor())
+    let student = {
+        id: 1,
+        name: "Mai Anh Dung",
+        address: "Thai Nguyen",
+        getInfor: function (){
+            return "Id =" + this.id + "Name =" + this.name + "Address =" + this.address;
+        }
+    }
+    alert(student.getInfor())
+</script>
+</body>
+</html>
