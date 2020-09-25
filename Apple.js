@@ -20,7 +20,7 @@ function Human(name,gender,weight){
 
     this.eat = function (apple){
         this.weight++;
-        apple.decrease;
+        apple.decrease();
     }
 }
 
@@ -28,10 +28,18 @@ let apple1 = new Apple()
 let Adam = new Human("Adam", "Male", 100);
 let Eva = new Human("Eva","Female", 70);
 
-// while (apple1.isEmpty() === false){
-    Adam.eat(apple1);
-    let appleMass = apple1.getWeight()
-    document.write(appleMass)
-    // Eva.eat(apple1);
-    // document.write(apple1.getWeight + "<br>");
-// }
+let myInterval = setInterval(function () {
+    if (AdamTurn) {
+        Adam.eat(apple1);
+        document.write("Adam eat the apple, the remaining apple mass is " + apple1.getWeight() + "<br>");
+
+        document.write("Adam says:" + Adam.say("Hello") + "<br>");
+
+    }
+    Eva.eat(apple1);
+    document.write("Eva eat the apple, the remaining apple mass is " + apple1.getWeight() + "<br>");
+    document.write("Eve says:" + Adam.say("Hello") + "<br>");
+    if (apple1.isEmpty()) {
+        clearInterval(myInterval)
+    }
+}, 1000)
